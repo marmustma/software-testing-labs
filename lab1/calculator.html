@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Калькулятор</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #eef1f5; display: flex; justify-content: center; padding-top: 20px; }
+  .calc { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,.15); width: 300px; }
+  h1 { font-size: 18px; margin: 0 0 12px; text-align: center; }
+  #display { width: 100%; box-sizing: border-box; height: 56px; font-size: 28px; text-align: right; padding: 0 10px;
+             border: 1px solid #ccc; border-radius: 6px; margin-bottom: 4px; background: #fafafa; }
+  #error { color: #c0392b; font-size: 13px; min-height: 18px; margin-bottom: 8px; }
+  .keys { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  button { height: 52px; font-size: 20px; border: none; border-radius: 6px; background: #e3e7ed; cursor: pointer; }
+  button.op { background: #ffb347; }
+  button.eq { background: #4caf50; color: #fff; }
+  button.clr { background: #e57373; color: #fff; }
+</style>
+</head>
+<body>
+<div class="calc">
+  <h1>Калькулятор</h1>
+  <input id="display" type="text" value="0" readonly>
+  <div id="error"></div>
+  <div class="keys">
+    <button id="btn-clear" class="clr" data-action="clear">C</button>
+    <button id="btn-back" data-action="back">⌫</button>
+    <button id="btn-sign" data-action="sign">±</button>
+    <button id="btn-div" class="op" data-op="/">÷</button>
+    <button id="btn-7" data-digit="7">7</button>
+    <button id="btn-8" data-digit="8">8</button>
+    <button id="btn-9" data-digit="9">9</button>
+    <button id="btn-mul" class="op" data-op="*">×</button>
+    <button id="btn-4" data-digit="4">4</button>
+    <button id="btn-5" data-digit="5">5</button>
+    <button id="btn-6" data-digit="6">6</button>
+    <button id="btn-sub" class="op" data-op="-">−</button>
+    <button id="btn-1" data-digit="1">1</button>
+    <button id="btn-2" data-digit="2">2</button>
+    <button id="btn-3" data-digit="3">3</button>
+    <button id="btn-add" class="op" data-op="+">+</button>
+    <button id="btn-0" data-digit="0">0</button>
+    <button id="btn-dot" data-action="dot">,</button>
+    <button id="btn-eq" class="eq" data-action="eq" style="grid-column: span 2">=</button>
+  </div>
+</div>
+<script>
+  const MAX_DIGITS = 12;
+  const display = document.getElementById('display');
+  const errorBox = document.getElementById('error');
+  let current = '0', stored = null, op = null, fresh = false;
+
+  function show(v) { display.value = String(v).replace('.', ','); }
+  function setError(msg) { errorBox.textContent = msg; }
+  function format(n) {
+    if (!isFinite(n)) return 'Ошибка';
+    const r = parseFloat(n.toPrecision(10));
+    return String(r);
+  }
+  function compute(a, b, o) {
+    switch (o) {
+      case '+': return a + b;
+      case '-': return a - b;
+      case '*': return a * b;
+      case '/': if (b === 0) { throw new Error('Деление на ноль невозможно'); } return a / b;
+    }
+  }
+  function inputDigit(d) {
+    setError('');
+    if (fresh) { current = '0'; fresh = false; }
+    if (current.replace('-', '').replace('.', '').length >= MAX_DIGITS) { setError('Максимум 12 цифр'); return; }
+    current = current === '0' ? d : current + d;
+    show(current);
+  }
+  function inputDot() {
+    if (fresh) { current = '0'; fresh = false; }
+    if (!current.includes('.')) current += '.';
+    show(current);
+  }
+  function chooseOp(o) {
+    setError('');
+    if (op && !fresh) { if (!equals()) return; }
+    stored = parseFloat(current); op = o; fresh = true;
+  }
+  function equals() {
+    if (op === null) return true;
+    try {
+      const res = compute(stored, parseFloat(current), op);
+      current = format(res); show(current);
+      op = null; stored = null; fresh = true; return true;
+    } catch (e) {
+      setError(e.message); current = '0'; show('Ошибка');
+      op = null; stored = null; fresh = true; return false;
+    }
+  }
+  function clearAll() { current = '0'; stored = null; op = null; fresh = false; setError(''); show(current); }
+  function back() {
+    if (fresh) return;
+    current = current.length > 1 ? current.slice(0, -1) : '0';
+    if (current === '-') current = '0';
+    show(current);
+  }
+  function sign() { if (current !== '0') { current = current.startsWith('-') ? current.slice(1) : '-' + current; show(current); } }
+
+  document.querySelector('.keys').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.digit) inputDigit(b.dataset.digit);
+    else if (b.dataset.op) chooseOp(b.dataset.op);
+    else ({ clear: clearAll, back, sign, dot: inputDot, eq: equals })[b.dataset.action]();
+  });
+  document.addEventListener('keydown', e => {
+    if (/^[0-9]$/.test(e.key)) inputDigit(e.key);
+    else if ('+-*/'.includes(e.key)) chooseOp(e.key);
+    else if (e.key === 'Enter' || e.key === '=') equals();
+    else if (e.key === 'Escape') clearAll();
+    else if (e.key === 'Backspace') back();
+    else if (e.key === '.' || e.key === ',') inputDot();
+  });
+</script>
+</body>
+</html>
