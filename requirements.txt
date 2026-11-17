@@ -1,0 +1,7 @@
+flask
+waitress
+selenium
+webdriver-manager
+pytest
+pytest-cov
+requests

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Заметки</string>
+    <string name="title">Мои заметки</string>
+    <string name="hint">Текст заметки</string>
+    <string name="add">Добавить</string>
+    <string name="clear">Очистить всё</string>
+    <string name="empty_error">Введите текст заметки</string>
+    <string name="deleted">Заметка удалена</string>
+    <string name="counter">Заметок: %1$d</string>
+</resources>
