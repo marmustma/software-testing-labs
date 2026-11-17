@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Todo List</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f0f2f5; display: flex; justify-content: center; padding-top: 20px; }
+  .app { background: #fff; width: 540px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,.12); }
+  h1 { margin: 0 0 14px; font-size: 22px; color: #2c3e50; }
+  .new { display: flex; gap: 8px; margin-bottom: 12px; }
+  #new-task { flex: 1; padding: 8px; font-size: 15px; border: 1px solid #ccc; border-radius: 5px; }
+  #add-btn { padding: 8px 14px; background: #3498db; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { display: flex; align-items: center; gap: 8px; padding: 8px; border-bottom: 1px solid #eee; white-space: nowrap; }
+  li.done .text { text-decoration: line-through; color: #999; }
+  .text { flex: 1; }
+  .del { background: none; border: none; color: #e74c3c; font-size: 18px; cursor: pointer; }
+  .footer { display: flex; gap: 8px; white-space: nowrap; justify-content: space-between; align-items: center; margin-top: 12px; font-size: 14px; }
+  .filters button { border: 1px solid transparent; background: none; cursor: pointer; padding: 3px 6px; }
+  .filters button.active { border-color: #3498db; border-radius: 4px; }
+  #clear-done { background: none; border: none; color: #7f8c8d; cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="app">
+  <h1>Мои задачи</h1>
+  <div class="new">
+    <input id="new-task" type="text" placeholder="Что нужно сделать?" maxlength="200">
+    <button id="add-btn">Добавить</button>
+  </div>
+  <ul id="list"></ul>
+  <div class="footer">
+    <span id="counter">Осталось: 0</span>
+    <div class="filters">
+      <button data-filter="all" class="active" id="f-all">Все</button>
+      <button data-filter="active" id="f-active">Активные</button>
+      <button data-filter="done" id="f-done">Выполненные</button>
+    </div>
+    <button id="clear-done">Очистить выполненные</button>
+  </div>
+</div>
+<script>
+  let tasks = (JSON.parse(localStorage.getItem('todo') || '[]')).map(t => ({ text: t, done: false }));
+  let filter = 'all';
+  const list = document.getElementById('list');
+  const input = document.getElementById('new-task');
+
+  function save() { localStorage.setItem('todo', JSON.stringify(tasks.map(t => t.text))); }
+  function visible() {
+    if (filter === 'active') return tasks.filter(t => !t.done);
+    if (filter === 'done') return tasks.filter(t => t.done);
+    return tasks;
+  }
+  function render() {
+    list.innerHTML = '';
+    visible().forEach((t, i) => {
+      const li = document.createElement('li');
+      if (t.done) li.className = 'done';
+      li.innerHTML = `<input type="checkbox" class="chk" ${t.done ? 'checked' : ''}>
+                      <span class="text">${t.text}</span>
+                      <button class="del" title="Удалить">✕</button>`;
+      li.querySelector('.chk').onchange = () => { t.done = !t.done; save(); render(); };
+      li.querySelector('.del').onclick = () => { tasks.splice(i, 1); save(); render(); };
+      li.querySelector('.text').ondblclick = () => {
+        const v = prompt('Изменить задачу', t.text);
+        if (v !== null) { t.text = v; save(); render(); }
+      };
+      list.appendChild(li);
+    });
+    document.getElementById('counter').textContent = 'Осталось: ' + tasks.length;
+  }
+  function add() {
+    const v = input.value;
+    if (v === '') return;
+    tasks.push({ text: v, done: false });
+    input.value = '';
+    save(); render();
+  }
+  document.getElementById('add-btn').onclick = add;
+  document.querySelectorAll('.filters button').forEach(b => b.onclick = () => {
+    filter = b.dataset.filter;
+    document.querySelectorAll('.filters button').forEach(x => x.classList.toggle('active', x === b));
+    render();
+  });
+  document.getElementById('clear-done').onclick = () => { tasks = tasks.filter(t => !t.done); save(); render(); };
+  render();
+</script>
+</body>
+</html>
