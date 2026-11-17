@@ -1,0 +1,29 @@
+name: LR5 Postman collection run (Newman)
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ "lab5/**", ".github/workflows/lab5-postman.yml" ]
+  workflow_dispatch:
+
+jobs:
+  newman:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Collection run
+        run: |
+          mkdir -p reports
+          npx --yes newman run lab5/JSONPlaceholder_Users.postman_collection.json \
+            --reporters cli,json,junit \
+            --reporter-json-export reports/newman.json \
+            --reporter-junit-export reports/newman.xml
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newman-report
+          path: reports/
