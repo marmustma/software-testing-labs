@@ -6,6 +6,9 @@ on:
     paths: [ "lab7/**", ".github/workflows/lab7-mobile.yml" ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   mobile:
     runs-on: ubuntu-latest
@@ -68,3 +71,19 @@ jobs:
           path: |
             lab7/screenshots/
             lab7/NotesApp/app/build/outputs/apk/debug/app-debug.apk
+
+      - name: Publish results to branch lab7-results
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p /tmp/res
+          cp -r lab7/screenshots /tmp/res/ || true
+          cp lab7/NotesApp/app/build/outputs/apk/debug/app-debug.apk /tmp/res/ || true
+          cd /tmp/res
+          git init -q -b lab7-results
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -qm "Результаты ЛР7: скриншоты и логи эмулятора"
+          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" lab7-results
