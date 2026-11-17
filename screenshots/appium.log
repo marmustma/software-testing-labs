@@ -1,0 +1,597 @@
+2026-11-17 20:08:33:556 [Appium] Welcome to Appium v4.0.0
+2026-11-17 20:08:33:559 [Appium] Attempting to load driver uiautomator2...
+2026-11-17 20:08:33:933 [HTTP] Appium REST http interface listener started on http://0.0.0.0:4723
+2026-11-17 20:08:33:933 [HTTP] You can provide the following URLs in your client code to connect to this server:
+	http://127.0.0.1:4723/ (only accessible from the same host)
+	http://10.0.137.149:4723/
+2026-11-17 20:08:33:934 [Appium] Available drivers:
+2026-11-17 20:08:33:935 [Appium]   - uiautomator2@9.2.1 (automationName 'UiAutomator2')
+2026-11-17 20:08:33:935 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2026-11-17 20:08:34:772 [HTTP] --> GET /status 
+2026-11-17 20:08:34:779 [HTTP] <-- GET /status 200 6 ms - 110
+2026-11-17 20:08:34:788 [HTTP] --> GET /status 
+2026-11-17 20:08:34:789 [HTTP] <-- GET /status 200 1 ms - 110
+2026-11-17 20:08:36:015 [HTTP] --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"UiAutomator2","platformName":"Android","appium:deviceName":"Android Emulator","appium:app":"/home/runner/work/software-testing-labs/software-testing-labs/lab7/NotesApp/app/build/outputs/apk/debug/app-debug.apk","appium:appPackage":"ru.mospolytech.notes","appium:appActivity":".MainActivity","appium:noReset":false,"appium:newCommandTimeout":300,"appium:uiautomator2ServerLaunchTimeout":120000,"appium:adbExecTimeout":120000}}}
+2026-11-17 20:08:36:019 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2026-11-17 20:08:36:019 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2026-11-17 20:08:36:019 [Appium] Will require it at /home/runner/.appium/node_modules/appium-uiautomator2-driver
+2026-11-17 20:08:36:021 [AppiumDriver@d9e3] Appium v4.0.0 creating new AndroidUiautomator2Driver (v9.2.1) session
+2026-11-17 20:08:36:021 [AppiumDriver@d9e3] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2026-11-17 20:08:36:021 [AppiumDriver@d9e3] Appium's BaseDriver version is 11.0.0
+2026-11-17 20:08:36:021 [AppiumDriver@d9e3] AndroidUiautomator2Driver's BaseDriver version is 11.0.0
+2026-11-17 20:08:36:025 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Session created with session id: 72514443-8252-4f9a-b20c-ade2b11420c0
+2026-11-17 20:08:36:032 [72514443][ADB] Found 6 'build-tools' folders under '/usr/local/lib/android/sdk' (newest first):
+2026-11-17 20:08:36:033 [72514443][ADB]     /usr/local/lib/android/sdk/build-tools/37.0.0
+2026-11-17 20:08:36:033 [72514443][ADB]     /usr/local/lib/android/sdk/build-tools/36.1.0
+2026-11-17 20:08:36:033 [72514443][ADB]     /usr/local/lib/android/sdk/build-tools/36.0.0
+2026-11-17 20:08:36:033 [72514443][ADB]     /usr/local/lib/android/sdk/build-tools/35.0.1
+2026-11-17 20:08:36:033 [72514443][ADB]     /usr/local/lib/android/sdk/build-tools/35.0.0
+2026-11-17 20:08:36:033 [72514443][ADB]     /usr/local/lib/android/sdk/build-tools/34.0.0
+2026-11-17 20:08:36:033 [72514443][ADB] Using 'adb' from '/usr/local/lib/android/sdk/platform-tools/adb'
+2026-11-17 20:08:36:040 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Retrieving device list
+2026-11-17 20:08:36:046 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Using device: emulator-5554
+2026-11-17 20:08:36:046 [72514443][BaseDriver] Subscribing aa69eb51-65f0-4098-897e-b916dc783297 to topic 'uiautomator2:sessionUdidClaimed'
+2026-11-17 20:08:36:047 [72514443][BaseDriver] Subscribing aa69eb51-65f0-4098-897e-b916dc783297 to topic 'uiautomator2:sessionUdidContended'
+2026-11-17 20:08:36:047 [72514443][BaseDriver] Subscribing aa69eb51-65f0-4098-897e-b916dc783297 to topic 'uiautomator2:sessionUdidReleased'
+2026-11-17 20:08:36:058 [72514443][BaseDriver] Unsubscribing aa69eb51-65f0-4098-897e-b916dc783297 from topic 'uiautomator2:sessionUdidContended'
+2026-11-17 20:08:36:058 [72514443][BaseDriver] Unsubscribing aa69eb51-65f0-4098-897e-b916dc783297 from topic 'uiautomator2:sessionUdidReleased'
+2026-11-17 20:08:36:059 [72514443][ADB] Using 'adb' from '/usr/local/lib/android/sdk/platform-tools/adb'
+2026-11-17 20:08:36:064 [72514443][BaseDriver] Using local app '/home/runner/work/software-testing-labs/software-testing-labs/lab7/NotesApp/app/build/outputs/apk/debug/app-debug.apk'
+2026-11-17 20:08:36:128 [72514443][ADB] Getting device platform version
+2026-11-17 20:08:36:192 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Relaxing hidden api policy
+2026-11-17 20:08:38:991 [72514443][ADB] The installation of 'settings_apk-debug.apk' took 2591ms
+2026-11-17 20:08:41:718 [72514443][ADB] Using 'apksigner.jar' from '/usr/local/lib/android/sdk/build-tools/37.0.0/lib/apksigner.jar'
+2026-11-17 20:08:42:086 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Server packages are going to be (re)installed
+2026-11-17 20:08:42:434 [72514443][ADB] '/home/runner/work/software-testing-labs/software-testing-labs/lab7/NotesApp/app/build/outputs/apk/debug/app-debug.apk' is signed with a non-default certificate
+2026-11-17 20:08:43:309 [72514443][ADB] The installation of 'appium-uiautomator2-server-debug-androidTest.apk' took 1185ms
+2026-11-17 20:08:44:326 [72514443][ADB] The installation of 'appium-uiautomator2-server-v11.0.7.apk' took 2206ms
+2026-11-17 20:08:44:452 [72514443][ADB] The installation of 'app-debug.apk' took 1871ms
+2026-11-17 20:08:44:618 [72514443][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2026-11-17 20:08:45:128 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Starting UIAutomator2 server 11.0.7
+2026-11-17 20:08:45:129 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Using UIAutomator2 server from '/home/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v11.0.7.apk' and test from '/home/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2026-11-17 20:08:45:129 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Waiting up to 120000ms for UiAutomator2 to be online...
+2026-11-17 20:08:45:193 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] socket hang up
+2026-11-17 20:08:46:197 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] socket hang up
+2026-11-17 20:08:47:201 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] socket hang up
+2026-11-17 20:08:48:212 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] socket hang up
+2026-11-17 20:08:49:534 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Screen already unlocked, doing nothing
+2026-11-17 20:08:49:535 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Starting 'ru.mospolytech.notes/.MainActivityand waiting for 'ru.mospolytech.notes/.MainActivity'
+2026-11-17 20:08:51:201 [72514443][BaseDriver] Unsubscribing aa69eb51-65f0-4098-897e-b916dc783297 from topic 'uiautomator2:sessionUdidClaimed'
+2026-11-17 20:08:51:201 [72514443][BaseDriver] Subscribing aa69eb51-65f0-4098-897e-b916dc783297 to topic 'uiautomator2:sessionUdidClaimed'
+2026-11-17 20:08:51:203 [72514443][AppiumDriver@d9e3] New AndroidUiautomator2Driver session created successfully, session 72514443-8252-4f9a-b20c-ade2b11420c0 added to master session list
+2026-11-17 20:08:51:206 [HTTP] <-- POST /session 200 15189 ms - 1348
+2026-11-17 20:08:51:209 [72514443][HTTP] --> POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/timeouts {"implicit":5000}
+2026-11-17 20:08:51:212 [72514443][HTTP] <-- POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/timeouts 200 3 ms - 14
+2026-11-17 20:08:51:215 [72514443][HTTP] --> POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/execute/sync {"script":"mobile: getCurrentPackage","args":[]}
+2026-11-17 20:08:51:431 [72514443][HTTP] <-- POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/execute/sync 200 215 ms - 32
+2026-11-17 20:08:51:433 [72514443][HTTP] --> POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:08:51:813 [72514443][HTTP] <-- POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/element 200 378 ms - 137
+2026-11-17 20:08:51:815 [72514443][HTTP] --> GET /session/72514443-8252-4f9a-b20c-ade2b11420c0/element/00000000-0000-0009-ffff-ffff00000007/text 
+2026-11-17 20:08:51:816 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:08:51:852 [72514443][HTTP] <-- GET /session/72514443-8252-4f9a-b20c-ade2b11420c0/element/00000000-0000-0009-ffff-ffff00000007/text 200 35 ms - 29
+2026-11-17 20:08:51:853 [72514443][HTTP] --> POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:08:51:871 [72514443][HTTP] <-- POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/element 200 18 ms - 137
+2026-11-17 20:08:51:875 [72514443][HTTP] --> POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/element/00000000-0000-0009-ffff-ffff00000005/value {"text":"Купить молоко","value":["К","у","п","и","т","ь"," ","м","о","л","о","к","о"]}
+2026-11-17 20:08:51:875 [72514443][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:08:51:955 [72514443][HTTP] <-- POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/element/00000000-0000-0009-ffff-ffff00000005/value 200 80 ms - 14
+2026-11-17 20:08:51:957 [72514443][HTTP] --> POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:08:52:531 [72514443][HTTP] <-- POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/element 200 567 ms - 137
+2026-11-17 20:08:52:532 [72514443][HTTP] --> POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/element/00000000-0000-0009-ffff-ffff00000006/click {}
+2026-11-17 20:08:52:758 [72514443][HTTP] <-- POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/element/00000000-0000-0009-ffff-ffff00000006/click 200 224 ms - 14
+2026-11-17 20:08:52:759 [72514443][HTTP] --> GET /session/72514443-8252-4f9a-b20c-ade2b11420c0/element/00000000-0000-0009-ffff-ffff00000007/text 
+2026-11-17 20:08:52:760 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:08:53:371 [72514443][HTTP] <-- GET /session/72514443-8252-4f9a-b20c-ade2b11420c0/element/00000000-0000-0009-ffff-ffff00000007/text 200 611 ms - 29
+2026-11-17 20:08:53:372 [72514443][HTTP] --> POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/elements {"using":"id","value":"android:id/text1"}
+2026-11-17 20:08:53:388 [72514443][HTTP] <-- POST /session/72514443-8252-4f9a-b20c-ade2b11420c0/elements 200 16 ms - 139
+2026-11-17 20:08:53:389 [72514443][HTTP] --> GET /session/72514443-8252-4f9a-b20c-ade2b11420c0/element/00000000-0000-0009-ffff-ffff00000011/text 
+2026-11-17 20:08:53:391 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:08:53:401 [72514443][HTTP] <-- GET /session/72514443-8252-4f9a-b20c-ade2b11420c0/element/00000000-0000-0009-ffff-ffff00000011/text 200 11 ms - 37
+2026-11-17 20:08:53:402 [72514443][HTTP] --> GET /session/72514443-8252-4f9a-b20c-ade2b11420c0/screenshot 
+2026-11-17 20:08:53:654 [72514443][HTTP] <-- GET /session/72514443-8252-4f9a-b20c-ade2b11420c0/screenshot 200 251 ms - 84632
+2026-11-17 20:08:53:656 [72514443][HTTP] --> DELETE /session/72514443-8252-4f9a-b20c-ade2b11420c0 
+2026-11-17 20:08:53:657 [72514443][BaseDriver] Unsubscribing aa69eb51-65f0-4098-897e-b916dc783297 from topic 'uiautomator2:sessionUdidClaimed'
+2026-11-17 20:08:53:978 [72514443][38;5;-42m[AndroidUiautomator2Driver@aa69] Restoring hidden api policy to the device default configuration
+2026-11-17 20:08:54:333 [72514443][AppiumDriver@d9e3] Removing session 72514443-8252-4f9a-b20c-ade2b11420c0 from our master session list
+2026-11-17 20:08:54:334 [72514443][HTTP] <-- DELETE /session/72514443-8252-4f9a-b20c-ade2b11420c0 200 678 ms - 14
+2026-11-17 20:08:54:731 [HTTP] --> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:automationName":"UiAutomator2","platformName":"Android","appium:deviceName":"Android Emulator","appium:app":"/home/runner/work/software-testing-labs/software-testing-labs/lab7/NotesApp/app/build/outputs/apk/debug/app-debug.apk","appium:appPackage":"ru.mospolytech.notes","appium:appActivity":".MainActivity","appium:noReset":false,"appium:newCommandTimeout":300,"appium:uiautomator2ServerLaunchTimeout":120000,"appium:adbExecTimeout":120000}}}
+2026-11-17 20:08:54:732 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+2026-11-17 20:08:54:733 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2026-11-17 20:08:54:733 [Appium] Will require it at /home/runner/.appium/node_modules/appium-uiautomator2-driver
+2026-11-17 20:08:54:734 [AppiumDriver@d9e3] Appium v4.0.0 creating new AndroidUiautomator2Driver (v9.2.1) session
+2026-11-17 20:08:54:734 [AppiumDriver@d9e3] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2026-11-17 20:08:54:734 [AppiumDriver@d9e3] Appium's BaseDriver version is 11.0.0
+2026-11-17 20:08:54:734 [AppiumDriver@d9e3] AndroidUiautomator2Driver's BaseDriver version is 11.0.0
+2026-11-17 20:08:54:736 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Session created with session id: d927f560-b81c-4e28-abe6-0055defe3d93
+2026-11-17 20:08:54:739 [d927f560][ADB] Using 'adb' from '/usr/local/lib/android/sdk/platform-tools/adb'
+2026-11-17 20:08:54:744 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Retrieving device list
+2026-11-17 20:08:54:749 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Using device: emulator-5554
+2026-11-17 20:08:54:749 [d927f560][BaseDriver] Subscribing e61fead7-7d7b-47ec-a398-16b5032ea965 to topic 'uiautomator2:sessionUdidClaimed'
+2026-11-17 20:08:54:749 [d927f560][BaseDriver] Subscribing e61fead7-7d7b-47ec-a398-16b5032ea965 to topic 'uiautomator2:sessionUdidContended'
+2026-11-17 20:08:54:750 [d927f560][BaseDriver] Subscribing e61fead7-7d7b-47ec-a398-16b5032ea965 to topic 'uiautomator2:sessionUdidReleased'
+2026-11-17 20:08:54:761 [d927f560][BaseDriver] Unsubscribing e61fead7-7d7b-47ec-a398-16b5032ea965 from topic 'uiautomator2:sessionUdidContended'
+2026-11-17 20:08:54:761 [d927f560][BaseDriver] Unsubscribing e61fead7-7d7b-47ec-a398-16b5032ea965 from topic 'uiautomator2:sessionUdidReleased'
+2026-11-17 20:08:54:762 [d927f560][ADB] Using 'adb' from '/usr/local/lib/android/sdk/platform-tools/adb'
+2026-11-17 20:08:54:766 [d927f560][BaseDriver] Using local app '/home/runner/work/software-testing-labs/software-testing-labs/lab7/NotesApp/app/build/outputs/apk/debug/app-debug.apk'
+2026-11-17 20:08:54:786 [d927f560][ADB] Getting device platform version
+2026-11-17 20:08:54:798 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Relaxing hidden api policy
+2026-11-17 20:08:55:566 [d927f560][ADB] Using 'aapt2' from '/usr/local/lib/android/sdk/build-tools/37.0.0/aapt2'
+2026-11-17 20:08:56:149 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Performing fast reset on 'ru.mospolytech.notes'
+2026-11-17 20:08:56:177 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Server packages are not going to be (re)installed
+2026-11-17 20:08:56:297 [d927f560][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2026-11-17 20:08:56:582 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Starting UIAutomator2 server 11.0.7
+2026-11-17 20:08:56:582 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Using UIAutomator2 server from '/home/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v11.0.7.apk' and test from '/home/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2026-11-17 20:08:56:582 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Waiting up to 120000ms for UiAutomator2 to be online...
+2026-11-17 20:08:56:590 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] socket hang up
+2026-11-17 20:08:57:598 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] socket hang up
+2026-11-17 20:08:58:601 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] socket hang up
+2026-11-17 20:08:59:776 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Screen already unlocked, doing nothing
+2026-11-17 20:08:59:776 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Starting 'ru.mospolytech.notes/.MainActivityand waiting for 'ru.mospolytech.notes/.MainActivity'
+2026-11-17 20:09:01:171 [d927f560][BaseDriver] Unsubscribing e61fead7-7d7b-47ec-a398-16b5032ea965 from topic 'uiautomator2:sessionUdidClaimed'
+2026-11-17 20:09:01:171 [d927f560][BaseDriver] Subscribing e61fead7-7d7b-47ec-a398-16b5032ea965 to topic 'uiautomator2:sessionUdidClaimed'
+2026-11-17 20:09:01:171 [d927f560][AppiumDriver@d9e3] New AndroidUiautomator2Driver session created successfully, session d927f560-b81c-4e28-abe6-0055defe3d93 added to master session list
+2026-11-17 20:09:01:173 [HTTP] <-- POST /session 200 6441 ms - 1348
+2026-11-17 20:09:01:175 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/timeouts {"implicit":5000}
+2026-11-17 20:09:01:177 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/timeouts 200 1 ms - 14
+2026-11-17 20:09:01:178 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: getCurrentPackage","args":[]}
+2026-11-17 20:09:01:551 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 371 ms - 32
+2026-11-17 20:09:01:552 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:09:01:714 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 162 ms - 137
+2026-11-17 20:09:01:716 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000007/text 
+2026-11-17 20:09:01:717 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:01:737 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000007/text 200 21 ms - 29
+2026-11-17 20:09:01:738 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: getCurrentPackage","args":[]}
+2026-11-17 20:09:02:024 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 286 ms - 32
+2026-11-17 20:09:02:026 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: getCurrentActivity","args":[]}
+2026-11-17 20:09:02:163 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 137 ms - 25
+2026-11-17 20:09:02:167 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:09:02:747 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 579 ms - 85372
+2026-11-17 20:09:02:749 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:02:892 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 143 ms - 137
+2026-11-17 20:09:02:894 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:02:910 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 16 ms - 14
+2026-11-17 20:09:02:914 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Первая заметка","value":["П","е","р","в","а","я"," ","з","а","м","е","т","к","а"]}
+2026-11-17 20:09:02:915 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:03:950 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1036 ms - 14
+2026-11-17 20:09:03:952 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:04:456 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 504 ms - 137
+2026-11-17 20:09:04:458 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:04:529 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 71 ms - 14
+2026-11-17 20:09:04:533 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:09:04:617 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 85 ms - 137
+2026-11-17 20:09:04:619 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000007/text 
+2026-11-17 20:09:04:620 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:05:810 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000007/text 200 1190 ms - 29
+2026-11-17 20:09:05:812 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements {"using":"id","value":"android:id/text1"}
+2026-11-17 20:09:05:843 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements 200 31 ms - 139
+2026-11-17 20:09:05:845 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000011/text 
+2026-11-17 20:09:05:845 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:05:854 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000011/text 200 9 ms - 39
+2026-11-17 20:09:05:855 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:09:06:148 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 292 ms - 86496
+2026-11-17 20:09:06:149 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:06:190 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 36 ms - 137
+2026-11-17 20:09:06:193 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:06:223 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 29 ms - 14
+2026-11-17 20:09:06:224 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"   ","value":[" "," "," "]}
+2026-11-17 20:09:06:225 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:07:225 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 998 ms - 14
+2026-11-17 20:09:07:226 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:07:728 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 501 ms - 137
+2026-11-17 20:09:07:730 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:07:803 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 73 ms - 14
+2026-11-17 20:09:07:806 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:09:08:310 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 504 ms - 137
+2026-11-17 20:09:08:311 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000007/text 
+2026-11-17 20:09:08:312 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:08:320 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000007/text 200 8 ms - 29
+2026-11-17 20:09:08:321 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:09:08:586 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 264 ms - 82744
+2026-11-17 20:09:08:587 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:08:600 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 12 ms - 137
+2026-11-17 20:09:08:601 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:08:618 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 17 ms - 14
+2026-11-17 20:09:08:621 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Удалить меня","value":["У","д","а","л","и","т","ь"," ","м","е","н","я"]}
+2026-11-17 20:09:08:621 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:09:647 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1026 ms - 14
+2026-11-17 20:09:09:649 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:10:148 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 499 ms - 137
+2026-11-17 20:09:10:150 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:10:225 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 75 ms - 14
+2026-11-17 20:09:10:227 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements {"using":"id","value":"android:id/text1"}
+2026-11-17 20:09:10:827 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements 200 600 ms - 267
+2026-11-17 20:09:10:829 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000011/text 
+2026-11-17 20:09:10:829 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:10:837 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000011/text 200 8 ms - 39
+2026-11-17 20:09:10:837 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000012/text 
+2026-11-17 20:09:10:838 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:10:846 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000012/text 200 8 ms - 35
+2026-11-17 20:09:10:847 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: longClickGesture","args":[{"elementId":"00000000-0000-0013-ffff-ffff00000012","duration":1200}]}
+2026-11-17 20:09:12:300 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 1452 ms - 14
+2026-11-17 20:09:13:306 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements {"using":"id","value":"android:id/text1"}
+2026-11-17 20:09:13:365 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements 200 57 ms - 139
+2026-11-17 20:09:13:366 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000011/text 
+2026-11-17 20:09:13:366 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:13:380 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000011/text 200 13 ms - 39
+2026-11-17 20:09:13:382 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:09:13:627 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 245 ms - 96816
+2026-11-17 20:09:13:629 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:13:639 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 10 ms - 137
+2026-11-17 20:09:13:640 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:13:650 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 10 ms - 14
+2026-11-17 20:09:13:651 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 2","value":["З","а","м","е","т","к","а"," ","2"]}
+2026-11-17 20:09:13:651 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:14:658 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1008 ms - 14
+2026-11-17 20:09:14:660 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:15:163 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 503 ms - 137
+2026-11-17 20:09:15:164 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:15:227 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 63 ms - 14
+2026-11-17 20:09:15:230 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:15:820 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 590 ms - 137
+2026-11-17 20:09:15:822 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:15:832 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 11 ms - 14
+2026-11-17 20:09:15:834 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 3","value":["З","а","м","е","т","к","а"," ","3"]}
+2026-11-17 20:09:15:834 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:16:893 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1059 ms - 14
+2026-11-17 20:09:16:901 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:16:956 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 59 ms - 137
+2026-11-17 20:09:16:960 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:18:041 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 1080 ms - 14
+2026-11-17 20:09:18:042 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:18:053 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 10 ms - 137
+2026-11-17 20:09:18:054 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:18:063 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 9 ms - 14
+2026-11-17 20:09:18:064 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 4","value":["З","а","м","е","т","к","а"," ","4"]}
+2026-11-17 20:09:18:064 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:18:587 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 523 ms - 14
+2026-11-17 20:09:18:588 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:19:106 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 517 ms - 137
+2026-11-17 20:09:19:107 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:19:282 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 174 ms - 14
+2026-11-17 20:09:19:284 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:19:879 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 595 ms - 137
+2026-11-17 20:09:19:881 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:19:891 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 10 ms - 14
+2026-11-17 20:09:19:892 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 5","value":["З","а","м","е","т","к","а"," ","5"]}
+2026-11-17 20:09:19:892 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:20:935 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1043 ms - 14
+2026-11-17 20:09:20:937 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:21:432 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 495 ms - 137
+2026-11-17 20:09:21:434 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:21:497 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 60 ms - 14
+2026-11-17 20:09:21:498 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:22:087 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 589 ms - 137
+2026-11-17 20:09:22:088 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:22:098 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 10 ms - 14
+2026-11-17 20:09:22:099 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 6","value":["З","а","м","е","т","к","а"," ","6"]}
+2026-11-17 20:09:22:099 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:23:160 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1061 ms - 14
+2026-11-17 20:09:23:165 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:23:250 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 88 ms - 137
+2026-11-17 20:09:23:253 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:24:299 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 1045 ms - 14
+2026-11-17 20:09:24:300 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:24:311 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 11 ms - 137
+2026-11-17 20:09:24:312 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:24:321 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 9 ms - 14
+2026-11-17 20:09:24:322 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 7","value":["З","а","м","е","т","к","а"," ","7"]}
+2026-11-17 20:09:24:323 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:24:837 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 514 ms - 14
+2026-11-17 20:09:24:838 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:25:359 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 521 ms - 137
+2026-11-17 20:09:25:361 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:25:497 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 131 ms - 14
+2026-11-17 20:09:25:499 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:26:093 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 594 ms - 137
+2026-11-17 20:09:26:094 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:26:105 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 10 ms - 14
+2026-11-17 20:09:26:106 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 8","value":["З","а","м","е","т","к","а"," ","8"]}
+2026-11-17 20:09:26:106 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:27:134 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1028 ms - 14
+2026-11-17 20:09:27:136 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:27:203 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 67 ms - 137
+2026-11-17 20:09:27:204 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:28:284 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 1080 ms - 14
+2026-11-17 20:09:28:285 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:28:295 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 10 ms - 137
+2026-11-17 20:09:28:296 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:28:304 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 8 ms - 14
+2026-11-17 20:09:28:305 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 9","value":["З","а","м","е","т","к","а"," ","9"]}
+2026-11-17 20:09:28:306 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:29:344 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1038 ms - 14
+2026-11-17 20:09:29:346 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:29:844 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 498 ms - 137
+2026-11-17 20:09:29:845 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:30:506 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 661 ms - 14
+2026-11-17 20:09:30:507 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:30:521 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 13 ms - 137
+2026-11-17 20:09:30:522 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:30:530 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 8 ms - 14
+2026-11-17 20:09:30:531 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 10","value":["З","а","м","е","т","к","а"," ","1","0"]}
+2026-11-17 20:09:30:531 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:31:578 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1046 ms - 14
+2026-11-17 20:09:31:581 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:31:661 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 80 ms - 137
+2026-11-17 20:09:31:664 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:32:142 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 478 ms - 14
+2026-11-17 20:09:32:144 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:32:736 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 591 ms - 137
+2026-11-17 20:09:32:737 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:32:747 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 10 ms - 14
+2026-11-17 20:09:32:748 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 11","value":["З","а","м","е","т","к","а"," ","1","1"]}
+2026-11-17 20:09:32:748 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:33:799 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1051 ms - 14
+2026-11-17 20:09:33:802 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:34:299 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 497 ms - 137
+2026-11-17 20:09:34:300 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:34:356 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 56 ms - 14
+2026-11-17 20:09:34:358 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:34:952 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 594 ms - 137
+2026-11-17 20:09:34:953 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:34:963 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 10 ms - 14
+2026-11-17 20:09:34:964 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 12","value":["З","а","м","е","т","к","а"," ","1","2"]}
+2026-11-17 20:09:34:965 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:36:016 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1051 ms - 14
+2026-11-17 20:09:36:018 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:36:069 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 51 ms - 137
+2026-11-17 20:09:36:071 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:36:557 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 485 ms - 14
+2026-11-17 20:09:36:559 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:37:168 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 609 ms - 137
+2026-11-17 20:09:37:169 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:37:184 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 15 ms - 14
+2026-11-17 20:09:37:185 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 13","value":["З","а","м","е","т","к","а"," ","1","3"]}
+2026-11-17 20:09:37:186 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:37:706 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 521 ms - 14
+2026-11-17 20:09:37:708 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:38:247 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 539 ms - 137
+2026-11-17 20:09:38:250 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:38:405 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 155 ms - 14
+2026-11-17 20:09:38:407 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:38:452 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 45 ms - 137
+2026-11-17 20:09:38:454 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:39:023 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 569 ms - 14
+2026-11-17 20:09:39:025 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 14","value":["З","а","м","е","т","к","а"," ","1","4"]}
+2026-11-17 20:09:39:025 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:40:092 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1067 ms - 14
+2026-11-17 20:09:40:096 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:40:596 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 499 ms - 137
+2026-11-17 20:09:40:597 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:41:246 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 649 ms - 14
+2026-11-17 20:09:41:247 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:41:257 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 10 ms - 137
+2026-11-17 20:09:41:258 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear {}
+2026-11-17 20:09:41:267 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/clear 200 8 ms - 14
+2026-11-17 20:09:41:269 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Заметка 15","value":["З","а","м","е","т","к","а"," ","1","5"]}
+2026-11-17 20:09:41:269 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:42:328 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 1058 ms - 14
+2026-11-17 20:09:42:332 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:09:42:832 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 500 ms - 137
+2026-11-17 20:09:42:833 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click {}
+2026-11-17 20:09:43:479 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000006/click 200 646 ms - 14
+2026-11-17 20:09:43:480 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: isKeyboardShown","args":[]}
+2026-11-17 20:09:43:580 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 99 ms - 15
+2026-11-17 20:09:43:581 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements {"using":"id","value":"android:id/text1"}
+2026-11-17 20:09:43:593 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements 200 12 ms - 1291
+2026-11-17 20:09:43:594 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000011/text 
+2026-11-17 20:09:43:594 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:600 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000011/text 200 6 ms - 39
+2026-11-17 20:09:43:601 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000012/text 
+2026-11-17 20:09:43:601 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:607 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000012/text 200 6 ms - 28
+2026-11-17 20:09:43:608 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000013/text 
+2026-11-17 20:09:43:609 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:614 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000013/text 200 6 ms - 28
+2026-11-17 20:09:43:615 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000014/text 
+2026-11-17 20:09:43:615 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:621 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000014/text 200 6 ms - 28
+2026-11-17 20:09:43:621 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000015/text 
+2026-11-17 20:09:43:622 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:627 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000015/text 200 5 ms - 28
+2026-11-17 20:09:43:627 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000016/text 
+2026-11-17 20:09:43:628 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:633 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000016/text 200 6 ms - 28
+2026-11-17 20:09:43:634 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000017/text 
+2026-11-17 20:09:43:634 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:640 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000017/text 200 6 ms - 28
+2026-11-17 20:09:43:641 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000018/text 
+2026-11-17 20:09:43:641 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:646 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000018/text 200 5 ms - 28
+2026-11-17 20:09:43:647 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000019/text 
+2026-11-17 20:09:43:647 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:653 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000019/text 200 5 ms - 28
+2026-11-17 20:09:43:653 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff0000001a/text 
+2026-11-17 20:09:43:653 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:659 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff0000001a/text 200 5 ms - 29
+2026-11-17 20:09:43:659 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/list_notes"}
+2026-11-17 20:09:43:667 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 8 ms - 137
+2026-11-17 20:09:43:668 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000008/rect 
+2026-11-17 20:09:43:668 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:43:674 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000008/rect 200 6 ms - 52
+2026-11-17 20:09:43:675 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: swipeGesture","args":[{"left":54,"top":641,"width":972,"height":1321,"direction":"up","percent":0.8}]}
+2026-11-17 20:09:43:860 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 184 ms - 14
+2026-11-17 20:09:44:861 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements {"using":"id","value":"android:id/text1"}
+2026-11-17 20:09:44:874 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements 200 13 ms - 1291
+2026-11-17 20:09:44:875 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000016/text 
+2026-11-17 20:09:44:875 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:44:882 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000016/text 200 7 ms - 28
+2026-11-17 20:09:44:883 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000017/text 
+2026-11-17 20:09:44:883 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:44:888 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000017/text 200 5 ms - 28
+2026-11-17 20:09:44:889 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000018/text 
+2026-11-17 20:09:44:889 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:44:894 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000018/text 200 5 ms - 28
+2026-11-17 20:09:44:895 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000019/text 
+2026-11-17 20:09:44:895 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:44:901 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000019/text 200 6 ms - 28
+2026-11-17 20:09:44:901 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff0000001a/text 
+2026-11-17 20:09:44:902 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:44:907 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff0000001a/text 200 5 ms - 29
+2026-11-17 20:09:44:907 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000011/text 
+2026-11-17 20:09:44:908 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:44:913 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000011/text 200 5 ms - 29
+2026-11-17 20:09:44:913 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff0000001b/text 
+2026-11-17 20:09:44:914 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:44:918 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff0000001b/text 200 5 ms - 29
+2026-11-17 20:09:44:919 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000013/text 
+2026-11-17 20:09:44:919 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:44:924 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000013/text 200 5 ms - 29
+2026-11-17 20:09:44:924 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000012/text 
+2026-11-17 20:09:44:924 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:44:929 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000012/text 200 5 ms - 29
+2026-11-17 20:09:44:930 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000015/text 
+2026-11-17 20:09:44:930 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:44:936 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000015/text 200 6 ms - 29
+2026-11-17 20:09:44:936 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:09:45:137 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 200 ms - 150864
+2026-11-17 20:09:45:139 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:45:149 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 9 ms - 137
+2026-11-17 20:09:45:150 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value {"text":"Черновик","value":["Ч","е","р","н","о","в","и","к"]}
+2026-11-17 20:09:45:150 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:09:45:699 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0013-ffff-ffff00000005/value 200 548 ms - 14
+2026-11-17 20:09:45:701 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/orientation {"orientation":"LANDSCAPE"}
+2026-11-17 20:09:45:703 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:46:362 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/orientation 200 660 ms - 21
+2026-11-17 20:09:48:368 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/orientation 
+2026-11-17 20:09:48:369 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:48:402 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/orientation 200 33 ms - 21
+2026-11-17 20:09:48:404 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:09:48:483 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 79 ms - 137
+2026-11-17 20:09:48:485 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0016-ffff-ffff00000023/text 
+2026-11-17 20:09:48:485 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:48:537 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0016-ffff-ffff00000023/text 200 52 ms - 30
+2026-11-17 20:09:48:540 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:09:48:804 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 264 ms - 100760
+2026-11-17 20:09:48:805 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/orientation {"orientation":"PORTRAIT"}
+2026-11-17 20:09:48:806 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:48:928 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/orientation 200 123 ms - 20
+2026-11-17 20:09:50:936 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:09:50:965 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 26 ms - 137
+2026-11-17 20:09:50:965 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000035/text 
+2026-11-17 20:09:50:966 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:50:978 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000035/text 200 12 ms - 28
+2026-11-17 20:09:50:979 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:09:50:989 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 10 ms - 137
+2026-11-17 20:09:50:989 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000037/text 
+2026-11-17 20:09:50:989 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:09:50:995 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000037/text 200 6 ms - 30
+2026-11-17 20:09:50:996 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:09:51:187 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 191 ms - 152068
+2026-11-17 20:09:55:195 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:09:55:428 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 231 ms - 152172
+2026-11-17 20:09:58:433 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: activateApp","args":[{"appId":"ru.mospolytech.notes","bundleId":"ru.mospolytech.notes"}]}
+2026-11-17 20:09:58:433 [d927f560][BaseDriver] The following arguments are not known and will be ignored: bundleId
+2026-11-17 20:09:58:472 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 39 ms - 14
+2026-11-17 20:10:00:474 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:10:00:769 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 295 ms - 137
+2026-11-17 20:10:00:770 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000037/text 
+2026-11-17 20:10:00:770 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:10:00:777 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000037/text 200 6 ms - 30
+2026-11-17 20:10:00:778 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:10:00:786 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 8 ms - 137
+2026-11-17 20:10:00:786 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000035/text 
+2026-11-17 20:10:00:786 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:10:00:793 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000035/text 200 6 ms - 28
+2026-11-17 20:10:00:793 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:10:00:980 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 186 ms - 153392
+2026-11-17 20:10:04:985 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: openNotifications","args":[]}
+2026-11-17 20:10:05:000 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 16 ms - 14
+2026-11-17 20:10:07:002 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:10:07:289 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 286 ms - 239896
+2026-11-17 20:10:07:291 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/back {}
+2026-11-17 20:10:07:291 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:10:07:369 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/back 200 78 ms - 14
+2026-11-17 20:10:08:372 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: activateApp","args":[{"appId":"ru.mospolytech.notes","bundleId":"ru.mospolytech.notes"}]}
+2026-11-17 20:10:08:373 [d927f560][BaseDriver] The following arguments are not known and will be ignored: bundleId
+2026-11-17 20:10:08:508 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 136 ms - 14
+2026-11-17 20:10:08:511 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:10:09:032 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 521 ms - 137
+2026-11-17 20:10:09:033 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000037/text 
+2026-11-17 20:10:09:034 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:10:09:040 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000037/text 200 6 ms - 30
+2026-11-17 20:10:09:041 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:10:09:235 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 193 ms - 163916
+2026-11-17 20:10:09:236 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: backgroundApp","args":[{"seconds":3}]}
+2026-11-17 20:10:12:966 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 3730 ms - 14
+2026-11-17 20:10:13:968 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: getCurrentPackage","args":[]}
+2026-11-17 20:10:13:988 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 20 ms - 32
+2026-11-17 20:10:13:989 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:10:14:000 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 11 ms - 137
+2026-11-17 20:10:14:001 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000037/text 
+2026-11-17 20:10:14:001 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:10:14:007 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-0018-ffff-ffff00000037/text 200 6 ms - 30
+2026-11-17 20:10:14:008 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:10:14:217 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 208 ms - 164300
+2026-11-17 20:10:14:218 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: pressKey","args":[{"keycode":3}]}
+2026-11-17 20:10:14:256 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 37 ms - 14
+2026-11-17 20:10:16:339 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: activateApp","args":[{"appId":"ru.mospolytech.notes","bundleId":"ru.mospolytech.notes"}]}
+2026-11-17 20:10:16:340 [d927f560][BaseDriver] The following arguments are not known and will be ignored: bundleId
+2026-11-17 20:10:16:396 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 57 ms - 14
+2026-11-17 20:10:18:400 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:10:18:482 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 80 ms - 137
+2026-11-17 20:10:18:484 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000007/text 
+2026-11-17 20:10:18:485 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:10:18:523 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000007/text 200 38 ms - 30
+2026-11-17 20:10:18:524 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:10:18:762 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 238 ms - 151868
+2026-11-17 20:10:18:804 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:10:18:999 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 195 ms - 151868
+2026-11-17 20:10:21:033 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: getCurrentPackage","args":[]}
+2026-11-17 20:10:21:054 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 21 ms - 32
+2026-11-17 20:10:21:055 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:10:21:069 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 14 ms - 137
+2026-11-17 20:10:21:070 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000005/clear {}
+2026-11-17 20:10:21:082 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000005/clear 200 11 ms - 14
+2026-11-17 20:10:21:083 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000005/value {"text":"После нехватки памяти","value":["П","о","с","л","е"," ","н","е","х","в","а","т","к","и"," ","п","а","м","я","т","и"]}
+2026-11-17 20:10:21:084 [d927f560][BaseDriver] The following arguments are not known and will be ignored: value
+2026-11-17 20:10:22:099 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000005/value 200 1015 ms - 14
+2026-11-17 20:10:22:106 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:10:22:605 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 499 ms - 137
+2026-11-17 20:10:22:606 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000006/click {}
+2026-11-17 20:10:22:669 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000006/click 200 62 ms - 14
+2026-11-17 20:10:22:671 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:10:22:769 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 98 ms - 137
+2026-11-17 20:10:22:772 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000007/text 
+2026-11-17 20:10:22:775 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:10:23:283 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000007/text 200 511 ms - 30
+2026-11-17 20:10:23:284 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:10:23:470 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 186 ms - 152328
+2026-11-17 20:10:23:472 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/note_input"}
+2026-11-17 20:10:23:485 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 13 ms - 137
+2026-11-17 20:10:23:487 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000005/click {}
+2026-11-17 20:10:23:542 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000005/click 200 54 ms - 14
+2026-11-17 20:10:24:544 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: isKeyboardShown","args":[]}
+2026-11-17 20:10:25:025 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 481 ms - 14
+2026-11-17 20:10:25:027 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_add"}
+2026-11-17 20:10:25:460 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 433 ms - 137
+2026-11-17 20:10:25:461 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000006/displayed 
+2026-11-17 20:10:25:470 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000006/displayed 200 8 ms - 14
+2026-11-17 20:10:25:470 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:10:25:751 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 279 ms - 215204
+2026-11-17 20:10:25:759 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/back {}
+2026-11-17 20:10:25:760 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:10:25:806 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/back 200 52 ms - 14
+2026-11-17 20:10:26:810 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: isKeyboardShown","args":[]}
+2026-11-17 20:10:26:885 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 75 ms - 15
+2026-11-17 20:10:26:886 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync {"script":"mobile: getCurrentPackage","args":[]}
+2026-11-17 20:10:26:905 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/execute/sync 200 19 ms - 32
+2026-11-17 20:10:26:906 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:10:27:107 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 201 ms - 161516
+2026-11-17 20:10:27:109 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/btn_clear"}
+2026-11-17 20:10:27:120 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 11 ms - 137
+2026-11-17 20:10:27:121 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000009/click {}
+2026-11-17 20:10:27:190 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000009/click 200 68 ms - 14
+2026-11-17 20:10:27:194 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element {"using":"id","value":"ru.mospolytech.notes:id/tv_counter"}
+2026-11-17 20:10:27:784 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/element 200 590 ms - 137
+2026-11-17 20:10:27:785 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000007/text 
+2026-11-17 20:10:27:785 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Driver proxy active, passing request on via HTTP proxy
+2026-11-17 20:10:27:792 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/element/00000000-0000-001a-ffff-ffff00000007/text 200 7 ms - 29
+2026-11-17 20:10:27:793 [d927f560][HTTP] --> POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements {"using":"id","value":"android:id/text1"}
+2026-11-17 20:10:32:803 [d927f560][HTTP] <-- POST /session/d927f560-b81c-4e28-abe6-0055defe3d93/elements 200 5010 ms - 12
+2026-11-17 20:10:32:804 [d927f560][HTTP] --> GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 
+2026-11-17 20:10:32:988 [d927f560][HTTP] <-- GET /session/d927f560-b81c-4e28-abe6-0055defe3d93/screenshot 200 184 ms - 92816
+2026-11-17 20:10:32:990 [d927f560][HTTP] --> DELETE /session/d927f560-b81c-4e28-abe6-0055defe3d93 
+2026-11-17 20:10:32:990 [d927f560][BaseDriver] Unsubscribing e61fead7-7d7b-47ec-a398-16b5032ea965 from topic 'uiautomator2:sessionUdidClaimed'
+2026-11-17 20:10:33:193 [d927f560][38;5;-193m[AndroidUiautomator2Driver@e61f] Restoring hidden api policy to the device default configuration
+2026-11-17 20:10:33:305 [d927f560][AppiumDriver@d9e3] Removing session d927f560-b81c-4e28-abe6-0055defe3d93 from our master session list
+2026-11-17 20:10:33:306 [d927f560][HTTP] <-- DELETE /session/d927f560-b81c-4e28-abe6-0055defe3d93 200 315 ms - 14
+2026-11-17 20:10:33:401 [Appium] Received SIGTERM - shutting down
