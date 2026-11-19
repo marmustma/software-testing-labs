@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 
 from pages.base_page import BasePage
 
@@ -31,7 +32,11 @@ class ContactPage(BasePage):
         return self
 
     def submit(self):
+        old_button = self.find(self.SUBMIT)
         self.click(self.SUBMIT)
+        # после отправки страница перезагружается: ждём, пока старая страница исчезнет,
+        # иначе тест может прочитать элемент со старой страницы (StaleElementReferenceException)
+        self.wait.until(EC.staleness_of(old_button))
         return self
 
     def success_message(self):
